@@ -1,0 +1,15 @@
+<h1>/{{ board }}/</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    Title: <input name="title"><br>
+    Name: <input name="name"><br>
+    Comment: <input name="comment"><br>
+    Image: <input type="file" name="image"><br>
+    <button>Create Thread</button>
+</form>
+
+<hr>
+
+{% for t in threads %}
+    <a href="/thread/{{ t[0] }}">Thread {{ t[0] }} - {{ t[2] }}</a><br>
+{% endfor %}

@@ -1,0 +1,20 @@
+<h1>Thread {{ thread_id }}</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    Name: <input name="name"><br>
+    Comment: <input name="comment"><br>
+    Image: <input type="file" name="image"><br>
+    <button>Reply</button>
+</form>
+
+<hr>
+
+{% for p in posts %}
+<div>
+    <b>{{ p[2] }}</b>: {{ p[3] }}<br>
+    {% if p[4] %}
+        <img src="/uploads/{{ p[4] }}" width="200">
+    {% endif %}
+</div>
+<hr>
+{% endfor %}
