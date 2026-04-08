@@ -11,3 +11,21 @@ once you have the docker image (you don't need it, it's just for portability) ru
 `docker run -d -p 8094:8094 --name forum forum-app`
 
 replace 8094:8094 with port:port (and replace port with whatever port you want) if you want to but it's not required to function
+
+
+
+for python run
+
+`git clone https://github.com/BellaTheUni112/forum.git`
+
+`cd forum`
+
+`python app.py`
+
+and make sure port 8094 (or whatever port you selected) is free
+
+replace the port=8094
+
+`    app.run(host='0.0.0.0', port=8094)`
+
+with whatever port you wan
