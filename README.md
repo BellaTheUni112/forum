@@ -10,4 +10,4 @@ once you have the docker image (you don't need it, it's just for portability) ru
 
 `docker run -d -p 8094:8094 --name forum forum-app`
 
-replace 8094:8094 with <whatever port you want>:<whatever port you want> if you want to but it's not required to function
+replace 8094:8094 with port:port (and replace port with whatever port you want) if you want to but it's not required to function
