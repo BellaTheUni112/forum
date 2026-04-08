@@ -28,4 +28,4 @@ replace the port=8094
 
 `    app.run(host='0.0.0.0', port=8094)`
 
-with whatever port you wan
+with whatever port you want
