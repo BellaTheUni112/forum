@@ -4,7 +4,11 @@ you can find the prebuilt docker image at https://mega.nz/file/DQAhTBjY#Yn0eb0ko
 
 i have an instance of it running on my server at http://473gxngybwfp7nihkzw547yu5zf7ith5jfpgjio5vzei2e3l5d2qmaid.onion/
 
-once you have the docker image (you don't need it, it's just for portability) run these
+for docker run
+
+`wget https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar`
+
+or `curl wget https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar -o forum_app.tar` if wget doesn't work for whatever reason
 
 `docker load -i forum-app.tar`
 
