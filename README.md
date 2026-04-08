@@ -8,7 +8,7 @@ for docker run
 
 `wget https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar`
 
-or `curl wget https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar -o forum_app.tar` if wget doesn't work for whatever reason
+or `curl -L -o forum-app.tar https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar` if wget doesn't work for whatever reason
 
 `docker load -i forum-app.tar`
 
