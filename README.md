@@ -24,6 +24,8 @@ for python run
 
 `cd forum`
 
+`pip install -r requirements.txt`
+
 `python app.py`
 
 and make sure port 8094 (or whatever port you selected) is free
