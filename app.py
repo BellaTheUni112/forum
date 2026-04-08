@@ -64,7 +64,6 @@ def view_board(board):
 
     return render_template('board.html', board=board, threads=threads)
 
-# View thread
 @app.route('/thread/<int:thread_id>', methods=['GET', 'POST'])
 def view_thread(thread_id):
     conn = db()
