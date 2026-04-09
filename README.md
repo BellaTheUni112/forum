@@ -1,10 +1,14 @@
-a cool little imageboard forum thingy.
+# A cool little imageboard forum thingy.
 
-you can find the prebuilt docker image at https://mega.nz/file/DQAhTBjY#Yn0eb0koYMeaysFpMoc8JJA9dTg0nDaX7LCs7qY4qNI (or in the releases) or build it yourself or just use the regular python
+This is a pretty cool little forum, it works pretty well and has all the features you'd expect.
 
-i have an instance of it running on my server at http://473gxngybwfp7nihkzw547yu5zf7ith5jfpgjio5vzei2e3l5d2qmaid.onion/
+I have an instance of it running on my server at http://473gxngybwfp7nihkzw547yu5zf7ith5jfpgjio5vzei2e3l5d2qmaid.onion/ but this is a Tor site, meaning you require the Tor Browser or some other client capable of using Tor routing in order to use the official instance.
 
-for docker run
+# Installation
+
+You can find the prebuilt Docker image at `https://mega.nz/file/DQAhTBjY#Yn0eb0koYMeaysFpMoc8JJA9dTg0nDaX7LCs7qY4qNI` (or in the releases) or build it yourself or just use the regular Python
+
+For a Docker installation, run:
 
 `wget https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar`
 
@@ -14,11 +18,9 @@ or `curl -L -o forum-app.tar https://github.com/BellaTheUni112/forum/releases/do
 
 `docker run -d -p 8094:8094 --name forum forum-app`
 
-replace 8094:8094 with port:port (and replace port with whatever port you want) if you want to but it's not required to function
+Replace 8094:8094 with port:port (and replace port with whatever port you want) if you want to but it's not required to function
 
-
-
-for python run
+For a Python installation, run:
 
 `git clone https://github.com/BellaTheUni112/forum.git`
 
@@ -28,15 +30,15 @@ for python run
 
 `python app.py`
 
-and make sure port 8094 (or whatever port you selected) is free
+And make sure port 8094 (or whatever port you selected) is free
 
-replace the port=8094
+# Tips
+
+If you wish to change the port which the Python version runs as (you can do this with Docker if you modify the Python then rebuild it), you can replace "port=8094" with "port=any free port)
 
 `    app.run(host='0.0.0.0', port=8094)`
 
-with whatever port you want
-
-
+# Screenshots
 
 <img width="1917" height="953" alt="image" src="https://github.com/user-attachments/assets/877e66c7-e928-41c4-80e7-9486c66ff8c3" />
 
