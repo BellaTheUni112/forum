@@ -1,62 +1,111 @@
-# A cool little imageboard forum thingy.
+# A cool little imageboard forum
 
-This is a pretty cool little forum, it works pretty well and has all the features you'd expect.
+A lightweight imageboard-style forum built with Flask.  
+Simple, fast, and easy to self-host.
 
-This uses the Flask framework.
+This project includes the core features you'd expect from a classic anonymous imageboard.
 
-I have an instance of it running on my server at http://473gxngybwfp7nihkzw547yu5zf7ith5jfpgjio5vzei2e3l5d2qmaid.onion/ but this is a Tor site, meaning you require the Tor Browser or some other client capable of using Tor routing in order to use the official instance.
+---
 
-# Features
+## Live Instance (Tor)
 
-Threads - allows classic forum threads
+An official instance is available:
 
-Images - allows image uploading
+http://473gxngybwfp7nihkzw547yu5zf7ith5jfpgjio5vzei2e3l5d2qmaid.onion/
 
-Replies - allows you to reply to posts
+This is a Tor hidden service, you’ll need the Tor Browser or a compatible client to access it.
 
-Boards - see content in a specific topic
+---
 
-Anonymity - no accounts, no sign-up, just enter the name you would like to use and go
+## Tech Stack
 
-Lightweight - can be accessed or run by almost all modern hardware
+- Python  
+- Flask  
 
-Fast - speedy responses, image loading, and thread loads (note: this varies based on how powerful the server is)
+---
 
-# Installation
+## Features
 
-You can find the prebuilt Docker image at `https://mega.nz/file/DQAhTBjY#Yn0eb0koYMeaysFpMoc8JJA9dTg0nDaX7LCs7qY4qNI` (or in the releases) or build it yourself or just use the regular Python
+- **Threads** – classic forum-style discussions  
+- **Replies** – respond to posts within threads  
+- **Images** – upload and share images  
+- **Boards** – organize content by topic  
+- **Anonymity** – no accounts required  
+- **Lightweight** – runs on most modern hardware  
+- **Fast** – quick page loads and responses (depends on server performance)
 
-For a Docker installation, run:
+---
 
-`wget https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar`
+## Installation
 
-or `curl -L -o forum-app.tar https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar` if wget doesn't work for whatever reason
+### Docker
 
-`docker load -i forum-app.tar`
+Download the prebuilt image:
 
-`docker run -d -p 8094:8094 --name forum forum-app`
+```bash
+wget https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar
+```
 
-Replace 8094:8094 with port:port (and replace port with whatever port you want) if you want to but it's not required to function
+Or:
 
-For a Python installation, run:
+```bash
+curl -L -o forum-app.tar https://github.com/BellaTheUni112/forum/releases/download/idkbro/forum-app.tar
+```
 
-`git clone https://github.com/BellaTheUni112/forum.git`
+Run it:
 
-`cd forum`
+```bash
+docker load -i forum-app.tar
+docker run -d -p 8094:8094 --name forum forum-app
+```
 
-`pip install -r requirements.txt`
+You can change the port if needed:
 
-`python app.py`
+```bash
+docker run -d -p <port>:<port> --name forum forum-app
+```
 
-And make sure port 8094 (or whatever port you selected) is free
+---
 
-# Tips
+### Python
 
-If you wish to change the port which the Python version runs as (you can do this with Docker if you modify the Python then rebuild it), you can replace "port=8094" with "port=any free port)
+```bash
+git clone https://github.com/BellaTheUni112/forum.git
+cd forum
+pip install -r requirements.txt
+python app.py
+```
 
-`    app.run(host='0.0.0.0', port=8094)`
+Make sure port `8094` (or your chosen port) is free.
 
-# Screenshots
+---
+
+## Configuration
+
+To change the port:
+
+```python
+app.run(host='0.0.0.0', port=8094)
+```
+
+Replace `8094` with any available port.
+
+---
+
+## Notes
+
+- No software is completely secure
+- This project does not guarantee complete anonymity
+- You must comply with all local laws when using this product
+- This project is designed for **self-hosting**
+- If you expose it publicly, consider:
+  - Moderation tools  
+  - Rate limiting  
+  - Basic security protections  
+
+---
+
+## Screenshots
 
 <img width="1917" height="953" alt="image" src="https://github.com/user-attachments/assets/877e66c7-e928-41c4-80e7-9486c66ff8c3" />
 
@@ -64,3 +113,4 @@ If you wish to change the port which the Python version runs as (you can do this
 
 <img width="1913" height="959" alt="image" src="https://github.com/user-attachments/assets/00b55082-3f26-4237-9b94-6a778d1cbca7" />
 
+---
