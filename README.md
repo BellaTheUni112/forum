@@ -35,3 +35,12 @@ replace the port=8094
 `    app.run(host='0.0.0.0', port=8094)`
 
 with whatever port you want
+
+
+
+<img width="1917" height="953" alt="image" src="https://github.com/user-attachments/assets/877e66c7-e928-41c4-80e7-9486c66ff8c3" />
+
+<img width="1912" height="951" alt="image" src="https://github.com/user-attachments/assets/2297dcb1-25ee-4979-bdfc-fd55e65934c0" />
+
+<img width="1913" height="959" alt="image" src="https://github.com/user-attachments/assets/00b55082-3f26-4237-9b94-6a778d1cbca7" />
+
