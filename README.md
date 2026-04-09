@@ -2,7 +2,25 @@
 
 This is a pretty cool little forum, it works pretty well and has all the features you'd expect.
 
+This uses the Flask framework.
+
 I have an instance of it running on my server at http://473gxngybwfp7nihkzw547yu5zf7ith5jfpgjio5vzei2e3l5d2qmaid.onion/ but this is a Tor site, meaning you require the Tor Browser or some other client capable of using Tor routing in order to use the official instance.
+
+# Features
+
+Threads - allows classic forum threads
+
+Images - allows image uploading
+
+Replies - allows you to reply to posts
+
+Boards - see content in a specific topic
+
+Anonymity - no accounts, no sign-up, just enter the name you would like to use and go
+
+Lightweight - can be accessed or run by almost all modern hardware
+
+Fast - speedy responses, image loading, and thread loads (note: this varies based on how powerful the server is)
 
 # Installation
 
